@@ -1,4 +1,4 @@
-# Allow (most) keywords as argument labels
+# Use compact syntax as base syntax
 
 * Proposal: [SE-0001](0001-compact-syntax.md)
 * Author: [Guillermo Facundo](https://github.com/thewilly)
