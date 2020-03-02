@@ -11,7 +11,7 @@ Shape Expressions can be expressed in multiple syntax, JSON-LD, RDF and compact 
 
 ## Motivation
 
-The following examplke shows perfectly how the comnpact syntax is more human-firendly than others like JSON-LD:
+The following example shows perfectly how the compact syntax is more human-friendly than others like JSON-LD:
 
 ```shex-lite
 PREFIX dc: <http://purl.org/dc/terms/>
@@ -101,4 +101,4 @@ Allow the use of compact syntax. This affects the grammar directly at:
 
 ## Alternatives considered
 
-Use of other syntaxes like JSON-LD or N-Triples
+Use of other syntaxes like JSON-LD or N-Triples.
