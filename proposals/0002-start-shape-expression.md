@@ -12,6 +12,8 @@ to a special shape called the start shape. A schema can have one more shape
 expression called the start expression. This serves as start here advice from
 the schema author and is useful when describing a graph with a single purpose.
 
+It is not mandatory to specify a start expression. Additionally, only one start expression can be specified at most. If more than one start expressions are present an error should be returned.
+
 ## Motivation
 
 Consider the following code:
