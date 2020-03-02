@@ -36,4 +36,4 @@ would validate :alice against the start shape expression (in the previous exampl
 * Add parser rule.
 * Add AST node.
 * Modify identification visitor to support the expected behaviour of the directive.
-* Modify the checking visitor to check that the start hape reference is declared.
+* Modify the checking visitor to check that the start shape reference is declared.
