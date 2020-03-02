@@ -3,7 +3,7 @@
 * Proposal: [SE-NNNN](NNNN-filename.md)
 * Authors: [Author 1](https://github.com/weso-bot), [Author 2](https://github.com/weso-bot)
 * Review Manager: TBD
-* Status: **Awaiting implementation**
+* Status: **Awaiting Review, Scheduled for Review, Active Review, Returned for Revision, Withdrawn, Accepted, Accepted with revisions, Rejected, Implemented, Error**
 
 *During the review process, add the following fields as needed:*
 
