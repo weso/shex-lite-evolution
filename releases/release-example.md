@@ -1,9 +1,9 @@
-# Swift 2.2 - Released on March 21, 2016
+# Shape Expression Lite 2.2 - Released on March 21, 2016
 
 [This release](https://swift.org/blog/swift-2-2-released/) focused on fixing
 bugs, improving quality-of-implementation (QoI)
 with better warnings and diagnostics, improving compile times, and improving
-performance.  It put some finishing touches on features introduced in Swift 2.0, 
+performance.  It put some finishing touches on features introduced in Swift 2.0,
 and included some small additive features that don't break Swift code or
 fundamentally change the way Swift is used. As a step toward Swift 3, it
 introduced warnings about upcoming source-incompatible changes in Swift 3
