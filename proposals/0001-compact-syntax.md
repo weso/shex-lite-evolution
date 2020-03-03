@@ -2,7 +2,7 @@
 
 * Proposal: [SE-0001](0001-compact-syntax.md)
 * Author: [Guillermo Facundo](https://github.com/thewilly)
-* Review Manager: TBD
+* Review Manager: [Guillermo Facundo](https://github.com/thewilly)
 * Status: **Accepted**
 
 ## Introduction
