@@ -2,7 +2,7 @@
 
 * Proposal: [SE-0002](0002-start-shape-expression.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
-* Review Manager: TBD
+* Review Manager: [Guillermo Facundo](https://github.com/thewilly)
 * Status: **Accepted**
 
 ## Introduction
