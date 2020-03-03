@@ -3,7 +3,7 @@
 * Proposal: [SE-0003](0003-prefix-directive.md)
 * Authors: [Guillermo Facundo](https://github.com/thewillt)
 * Review Manager: TBD
-* Status: **Awaiting Review**
+* Status: **Accepted**
 
 ## Introduction
 
