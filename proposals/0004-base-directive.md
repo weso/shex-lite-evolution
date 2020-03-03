@@ -3,7 +3,7 @@
 * Proposal: [SE-0004](0004-base-directive.md)
 * Authors: [Guillermo Facundd](https://github.com/thewilly)
 * Review Manager: TBD
-* Status: **Awaiting Review**
+* Status: **Accepted**
 
 ## Introduction
 
