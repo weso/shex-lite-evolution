@@ -20,7 +20,7 @@ BASE <http://default.org>
 // Changes the base directive.
 BASE <http://default-new.org>
 
-<car> {  // <http://default.org/car>.
+<car> {  // <http://default-new.org/car>.
   :badge .
 }
 
