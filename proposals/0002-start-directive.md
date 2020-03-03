@@ -3,7 +3,7 @@
 * Proposal: [SE-0002](0002-start-directive.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
 * Review Manager: [Guillermo Facundo](https://github.com/thewilly)
-* Status: **Accepted**
+* Status: **Awaiting Implementation**
 
 ## Introduction
 
