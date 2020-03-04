@@ -8,8 +8,7 @@
 *During the review process, add the following fields as needed:*
 
 * Implementation: [weso/shex-lite#NNNNN](https://github.com/weso/shex-lite/pull/NNNNN) or [weso/shex-lite-evolution-staging#NNNNN](https://github.com/weso/shex-lite-evolution-staging/pull/NNNNN)
-* Previous Revision: [1](https://github.com/weso/shex-lite-evolution/blob/...commit-ID.../proposals/NNNN-filename.md)
-* Previous Proposal: [SE-XXXX](XXXX-filename.md)
+* Parent Proposal: [SE-XXXX](XXXX-filename.md)
 
 ## Introduction
 
