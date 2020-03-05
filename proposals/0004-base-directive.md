@@ -1,4 +1,4 @@
-# Directive: base
+# Directive: Base
 
 * Proposal: [SE-0004](0004-base-directive.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
