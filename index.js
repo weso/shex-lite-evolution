@@ -315,7 +315,7 @@ function renderBody () {
       if (state === '.implemented') detailNodes.push(renderVersion(proposal.status.version))
       if (proposal.implementation) detailNodes.push(renderImplementation(proposal.implementation))
       if (state === '.acceptedWithRevisions') detailNodes.push(renderStatus(proposal.status))
-      if (proposal.summary) detailNodes.push(renderSummary(proposal.summary))
+      // if (proposal.summary) detailNodes.push(renderSummary(proposal.summary)) // Not sure how about it yet.
 
       if (state === '.activeReview' || state === '.scheduledForReview') {
         detailNodes.push(renderStatus(proposal.status))
