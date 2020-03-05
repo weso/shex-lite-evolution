@@ -33,4 +33,4 @@ The solution proposed is based in the same implementation used in the full ShEx-
 ## Alternatives considered
 
 * Do not allow to override the base declarations.
-* Remove base declarations and therefore relative IRIs.
+* Remove base declarations and therefore relative IRI's.
