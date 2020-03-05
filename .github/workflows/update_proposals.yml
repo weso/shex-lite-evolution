@@ -1,0 +1,20 @@
+name: Update proposals
+
+on:
+  push:
+    branches:
+      master
+  delete:
+    branches:
+      master
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2-beta
+      with:
+        repository: weso/shex-lite-proposals-manager
+        token: ${{ secrets.WESOBOT_ACCESS_TOKEN}}
+    - name: proposals-sync
+      uses: ./
