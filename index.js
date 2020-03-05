@@ -103,7 +103,6 @@ function init () {
 
   req.addEventListener('load', function (e) {
     proposals = JSON.parse(req.responseText)
-    console.log('Proposals: ' + proposals[0].id)
 
     // don't display malformed proposals
     proposals = proposals.filter(function (proposal) {
@@ -134,7 +133,7 @@ function init () {
   })
 
   document.querySelector('#proposals-count-number').innerHTML = 'Loading ...'
-  req.open('get', 'http://localhost:4001/api/proposals')
+  req.open('get', 'http://156.35.94.148:8080/api/proposals')
   req.send()
 }
 
@@ -283,8 +282,6 @@ function renderBody () {
   ]
 
   proposalPresentationOrder.map(function (state) {
-    console.log("Proposals in render: " + proposals)
-    proposals.forEach(function (p) { console.log(p) })
     var matchingProposals = proposals.filter(function (p) { return p.status && p.status.state === state })
     matchingProposals.map(function (proposal) {
       var proposalBody = html('section', { id: proposal.id, className: 'proposal ' + proposal.id }, [
