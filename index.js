@@ -1,13 +1,13 @@
 'use strict'
 
-/** Holds the primary data used on this page: metadata about Swift Evolution proposals. */
+/** Holds the primary data used on this page: metadata about shex-lite Evolution proposals. */
 var proposals
 
 /**
  * To be updated when proposals are confirmed to have been implemented
  * in a new language version.
  */
-var languageVersions = ['2.2', '3', '3.0.1', '3.1', '4', '4.1', '4.2', '5', '5.1', '5.2', '5.3']
+var languageVersions = []
 
 /** Storage for the user's current selection of filters when filtering is toggled off. */
 var filterSelection = []
@@ -60,7 +60,7 @@ var states = {
   '.awaitingImplementation': {
     name: 'Awaiting Implementation',
     shortName: 'Awaiting Impl.',
-    className: 'deferred',
+    className: 'awaiting-implementation',
     count: 0
   },
   '.accepted': {
@@ -247,15 +247,15 @@ function renderNav () {
       return html('li', null, [
         html('input', {
           type: 'checkbox',
-          id: 'filter-by-swift-' + _idSafeName(version),
-          className: 'filter-by-swift-version',
-          value: 'swift-' + _idSafeName(version)
+          id: 'filter-by-shex-lite-' + _idSafeName(version),
+          className: 'filter-by-shex-lite-version',
+          value: 'shex-lite-' + _idSafeName(version)
         }),
         html('label', {
           tabindex: '0',
           role: 'button',
-          'for': 'filter-by-swift-' + _idSafeName(version)
-        }, 'Swift ' + version)
+          'for': 'filter-by-shex-lite-' + _idSafeName(version)
+        }, 'ShEx-lite ' + version)
       ])
     })
 
@@ -384,7 +384,6 @@ function renderSummary(summary) {
   ])
 }
 
-/** Tracking bugs linked in a proposal are updated via bugs.swift.org. */
 function renderTrackingBugs (bugs) {
   var bugNodes = bugs.map(function (bug) {
     return html('a', { href: bug.link, target: '_blank' }, [
@@ -409,7 +408,6 @@ function renderTrackingBugs (bugs) {
   ])
 }
 
-/** Implementations are required alongside proposals (after Swift 4.0). */
 function renderImplementation (implementations) {
   var implNodes = implementations.map(function (impl) {
     return html('a', {
@@ -433,14 +431,13 @@ function renderImplementation (implementations) {
   ])
 }
 
-/** For `.implemented` proposals, display the version of Swift in which they first appeared. */
 function renderVersion (version) {
   return html('div', { className: 'proposal-detail' }, [
     html('div', { className: 'proposal-detail-label' }, [
       'Implemented In: '
     ]),
     html('div', { className: 'proposal-detail-value' }, [
-      'Swift ' + version
+      'shex-lite ' + version
     ])
   ])
 }
@@ -536,7 +533,7 @@ function addEventListeners () {
     })
 
     // don't persist any version selections when the row is hidden
-    ;[].concat.apply([], expandableArea.querySelectorAll('.filter-by-swift-version')).forEach(function (versionCheckbox) {
+    ;[].concat.apply([], expandableArea.querySelectorAll('.filter-by-shex-lite-version')).forEach(function (versionCheckbox) {
       versionCheckbox.checked = false
     })
   })
@@ -621,7 +618,7 @@ function toggleFiltering () {
 /**
  * Expands or constracts the filter panel, which contains buttons that
  * let users filter proposals based on their current stage in the
- * Swift Evolution process.
+ * shex-lite Evolution process.
  */
 function toggleFilterPanel () {
   var panel = document.querySelector('.expandable')
@@ -766,7 +763,7 @@ function _applyFilter (matchingProposals) {
       })
 
     // handle version-specific filtering options
-    if (selectedStates.some(function (state) { return state.match(/swift/i) })) {
+    if (selectedStates.some(function (state) { return state.match(/shex-lite/i) })) {
       matchingProposals = matchingProposals
         .filter(function (proposal) {
           return selectedStates.some(function (state) {
@@ -816,7 +813,7 @@ function _applyFilter (matchingProposals) {
  * Four types of parameters are supported:
  * - proposal: A comma-separated list of proposal IDs. Treated as an 'or' search.
  * - filter: A comma-separated list of proposal statuses to apply as a filter.
- * - version: A comma-separated list of Swift version numbers to apply as a filter.
+ * - version: A comma-separated list of shex-lite version numbers to apply as a filter.
  * - search: Raw, URL-encoded text used to filter by individual term.
  *
  * @param {string} fragment - A URI fragment to use as the basis for a search.
@@ -855,7 +852,7 @@ function _applyFragment (fragment) {
 
   if (actions.version.length) {
     var versionSelections = actions.version.map(function (version) {
-      return document.querySelector('#filter-by-swift-' + _idSafeName(version))
+      return document.querySelector('#filter-by-shex-lite-' + _idSafeName(version))
     }).filter(function (version) {
       return !!version
     })
@@ -929,9 +926,9 @@ function _updateURIFragment () {
     actions.search = search.value
   }
 
-  var selectedVersions = document.querySelectorAll('.filter-by-swift-version:checked')
+  var selectedVersions = document.querySelectorAll('.filter-by-shex-lite-version:checked')
   var versions = [].map.call(selectedVersions, function (checkbox) {
-    return checkbox.value.split('swift-swift-')[1].split('-').join('.')
+    return checkbox.value.split('shex-lite-shex-lite-')[1].split('-').join('.')
   })
 
   actions.version = versions
@@ -977,9 +974,9 @@ function _updateURIFragment () {
   window.history.replaceState(null, null, fragment)
 }
 
-/** Helper to give versions like 3.0.1 an okay ID to use in a DOM element. (swift-3-0-1) */
+/** Helper to give versions like 3.0.1 an okay ID to use in a DOM element. (shex-lite-3-0-1) */
 function _idSafeName (name) {
-  return 'swift-' + name.replace(/\./g, '-')
+  return 'shex-lite-' + name.replace(/\./g, '-')
 }
 
 /**
@@ -1003,11 +1000,11 @@ function updateFilterDescription (selectedStateNames) {
   var container = document.querySelector('.toggle-filter-panel')
 
   // modify the state names to clump together Implemented with version names
-  var swiftVersionStates = selectedStateNames.filter(function (state) { return state.match(/swift/i) })
+  var shexliteVersionStates = selectedStateNames.filter(function (state) { return state.match(/shex\-lite/i) })
 
-  if (swiftVersionStates.length > 0 && swiftVersionStates.length <= FILTER_DESCRIPTION_LIMIT) {
-    selectedStateNames = selectedStateNames.filter(function (state) { return !state.match(/swift|implemented/i) })
-      .concat('Implemented (' + swiftVersionStates.join(', ') + ')')
+  if (shexliteVersionStates.length > 0 && shex-liteVersionStates.length <= FILTER_DESCRIPTION_LIMIT) {
+    selectedStateNames = selectedStateNames.filter(function (state) { return !state.match(/shex\-lite|implemented/i) })
+      .concat('Implemented (' + shex-liteVersionStates.join(', ') + ')')
   }
 
   if (selectedStateNames.length > FILTER_DESCRIPTION_LIMIT) {
