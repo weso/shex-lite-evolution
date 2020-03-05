@@ -1,4 +1,7 @@
 # Shape Expressions Lite Language Evolution
+[![shex-lite](https://img.shields.io/badge/ShExLite%201-Open%20to%20requests-brightgreen.svg)](#shex-lite_stage)
+
+
 Before you initiate a pull request, please read the process document.
 
 This repository tracks the ongoing evolution of ShEx-Lite. It contains:
