@@ -312,7 +312,10 @@ function renderBody () {
 
       if (proposal.reviewManager.name) detailNodes.push(renderReviewManager(proposal.reviewManager))
       if (proposal.trackingBugs) detailNodes.push(renderTrackingBugs(proposal.trackingBugs))
-      if (state === '.implemented') detailNodes.push(renderVersion(proposal.status.version))
+
+      // TODO: uncomment this line in the future when we add a version to the status in shex-lite proposals
+      //if (state === '.implemented') detailNodes.push(renderVersion(proposal.status.version))
+
       if (proposal.implementation) detailNodes.push(renderImplementation(proposal.implementation))
       if (state === '.acceptedWithRevisions') detailNodes.push(renderStatus(proposal.status))
       // if (proposal.summary) detailNodes.push(renderSummary(proposal.summary)) // Not sure how about it yet.
