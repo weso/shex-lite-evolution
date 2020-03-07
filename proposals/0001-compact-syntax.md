@@ -103,3 +103,4 @@ Allow the use of compact syntax. This affects the grammar directly at:
 ## Alternatives considered
 
 Use of other syntaxes like JSON-LD or N-Triples.
+ 
