@@ -18,3 +18,7 @@ jobs:
         token: ${{ secrets.WESOBOT_ACCESS_TOKEN}}
     - name: proposals-sync
       uses: ./
+      env:
+        PROPOSAL_TYPE: "shex-lite"
+      with:
+        args: $PROPOSAL_TYPE
