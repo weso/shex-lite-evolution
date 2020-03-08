@@ -133,7 +133,7 @@ function init () {
   })
 
   document.querySelector('#proposals-count-number').innerHTML = 'Loading ...'
-  req.open('get', 'http://156.35.94.148:8080/api/proposals')
+  req.open('get', 'http://156.35.94.148:8080/api/shexlite/proposals')
   req.send()
 }
 
