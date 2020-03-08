@@ -1,6 +1,6 @@
 # Make the `AND` keyword compulsory
 
-* Proposal: [SE-0008](0008-compulsory-and-keyword.md)
+* Proposal: [SE-0009](0009-compulsory-and-keyword.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
 * Review Manager: TBD
 * Status: **Awaiting Review**
