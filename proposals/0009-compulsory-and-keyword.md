@@ -5,6 +5,7 @@
 * Review Manager: TBD
 * Status: **Awaiting Review**
 * Implementation: [shex-lite/shex-lite-2.0-dev#19@8b0aaab](https://github.com/weso/shex-lite/pull/19/commits/8b0aaabba4fcca194cd30baa31a5ef7999a73a0a)
+* Associated Project: [Hercules Project](https://www.um.es/web/hercules/)
 
 ## Introduction
 
