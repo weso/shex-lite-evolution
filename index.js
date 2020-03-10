@@ -316,6 +316,7 @@ function renderBody () {
       // TODO: uncomment this line in the future when we add a version to the status in shex-lite proposals
       //if (state === '.implemented') detailNodes.push(renderVersion(proposal.status.version))
 
+      if (proposal.associatedProject) detailNodes.push(renderAssociatedProject(proposal.associatedProject))
       if (proposal.implementation) detailNodes.push(renderImplementation(proposal.implementation))
       if (state === '.acceptedWithRevisions') detailNodes.push(renderStatus(proposal.status))
       // if (proposal.summary) detailNodes.push(renderSummary(proposal.summary)) // Not sure how about it yet.
@@ -374,6 +375,17 @@ function renderReviewManager (reviewManager) {
       reviewManager.link
         ? html('a', { href: reviewManager.link, target: '_blank' }, reviewManager.name)
         : reviewManager.name
+    ])
+  ])
+}
+
+function renderAssociatedProject (associatedProject) {
+  return html('div', { className: 'associated-project proposal-detail' }, [
+    html('div', { className: 'proposal-detail-label' }, 'Associated Project: '),
+    html('div', { className: 'proposal-detail-value' }, [
+      associatedProject.link
+        ? html('a', { href: associatedProject.link, target: '_blank' }, associatedProject.name)
+        : associatedProject.name
     ])
   ])
 }
