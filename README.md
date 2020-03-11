@@ -17,7 +17,7 @@ For historical purposes, the bottom of the document includes goals for past vers
 
 ## Development major version: ShEx-Lite 1.0
 
-Planned release on May 2020
+Planned release on May 2020.
 
 ### Primary Focus: Error system and Performance improvement.
 
