@@ -3,7 +3,7 @@
 * Proposal: [SE-0010](0010-disable-prefix-redefinition.md)
 * Authors: [Guillermo Facundo Colunga](https://github.com/thewilly)
 * Review Manager: TBD
-* Status: **Awaiting Review**
+* Status: **Accepted**
 
 ## Introduction
 
@@ -47,3 +47,10 @@ prefix a: <b>   # ERROR (prefix redefinition not allowed).
 
 a:User .		
 ```
+
+## Comments
+After the meeting held by the core team, it is decided that for now the policy to be applied will be as follows:
+
+To maintain the integrity of the language, no re-definition will be allowed. At least for the moment. In this way, when a redefinition is found, the user will be informed that he is performing an action not allowed by means of an error.
+
+Likewise, and in order not to conflict with prefixes defined in other source files that are related by means of the import directive, it is agreed that each prefix is ​​identified atomically by the name of its source file, its line and its column.
