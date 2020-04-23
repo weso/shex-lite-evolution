@@ -3,7 +3,8 @@
 * Proposal: [SE-0006](0006-node-constraint-types.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
 * Review Manager: TBD
-* Status: **Awaiting Review**
+* Status: **Implemented**
+* Implementation: [weso/shex-lite#80](https://github.com/weso/shex-lite/pull/80)
 
 ## Introduction
 
