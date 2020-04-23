@@ -1,4 +1,4 @@
-# Automatic generation of package declaration for java generated pojos
+# Automatic generation of package declaration for java generated POJO's
 
 * Proposal: [SE-0012](0012-automatic-generation-of-package.md)
 * Authors: [Daniel Fernández Álvarez](https://github.com/DaniFdezAlvarez)
