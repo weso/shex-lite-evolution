@@ -3,7 +3,7 @@
 * Proposal: [SE-0008](0008-triple-expression-definition-parser-rule.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
 * Review Manager: TBD
-* Status: **Awaiting Review**
+* Status: **Rejected**
 
 ## Introduction
 

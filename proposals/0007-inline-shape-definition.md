@@ -3,7 +3,8 @@
 * Proposal: [SE-0007](0007-inline-shape-definition.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
 * Review Manager: [Guillermo Facundo](https://github.com/thewilly)
-* Status: **Awaiting Review**
+* Status: **Implemented**
+* Implementation: [weso/shex-lite#80](https://github.com/weso/shex-lite/pull/80)
 
 ## Introduction
 

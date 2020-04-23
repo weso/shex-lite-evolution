@@ -3,7 +3,7 @@
 * Proposal: [SE-0005](0005-import-directive.md)
 * Authors: [Guillermo Facundo](https://github.com/thewilly)
 * Review Manager: [Alejandro González](https://github.com/alejgh)
-* Status: **Active Review**
+* Status: **Rejected**
 
 ## Introduction
 
